@@ -11,14 +11,38 @@ body {
     
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px 100px;
+    gap: 80px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+
+
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 600;
 }
 
 ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 a {
@@ -39,9 +63,40 @@ a {
 
 .img {
     width: 500px;
-    height: 300px;
+    height: 200px;
     background-color: #777;
     color: #F9FAF8;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.cat-text {
+    color: #999;
+    font-weight: 300;
 }
 
 .information-title {
@@ -51,13 +106,22 @@ a {
 }
 
 .square {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #3882F6;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .quote {
+    height: 450px;
+    box-sizing: border-box;
     background-color: #E5E7EB;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote-text {
@@ -67,19 +131,34 @@ a {
 }
 
 .quote-creator {
+    font-size: 24px;
     font-weight: bold;
+    align-self: flex-end;
 }
 
 .call {
     color: #F9FAF8;
+    height: 350px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .call-square {
     background-color: #3882F6;
-    width: max-content;
+    border-radius: 10px;
+    padding: 10px;
+    width: 900px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .call-title {
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -87,6 +166,11 @@ button {
     background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.sign-up {
+    border: none;
 }
 
 .call-button {
@@ -95,4 +179,8 @@ button {
 
 .footer {
     color: #FFF;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
